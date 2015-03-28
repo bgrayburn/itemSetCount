@@ -4,7 +4,7 @@ This code was written because of the need to count groupings of a large number o
 # Quickstart
 Assuming you have MongoDB, you need to set the addresses, database names, and collection names in both `common_multicore.py` and `common_item_analysis_agg.py`
 
-Running `./run_it_all.sh` from the root folder of this repo with run this complete workflow on test data located in the `/test/input` directory. In this folder is also a script to generate the test data in case you want to vary the parameters used to generate the test data. Outputs of the workflow will be generated in `/test/output`.
+Running `./run_it_all.sh` from the root folder of this repo will run the complete workflow on test data located in the `/test/input` directory. In that folder is also a script to generate the test data in case you want to vary the parameters used to generate the test data. Outputs of the workflow will be generated in `/test/output`.
 
 # What it is and isn't
 This repo uses python multiprocessing and MongoDB to accomplish a (local) MapReduce job in which the frequency of items and sets of items in a list of transactions are counted. This code can be easily modified to accomplish a number of MapReduce type jobs including word count, large data-set filtering, and joining a large dataset with one or multiple small datasets.
